@@ -1,5 +1,5 @@
-1.This is the cp2k code for reproducing aimd simulation from thesis "A cost-effective all-in-one halide material for all-solid-state batteries"
-2.there are 21 structures for Li1.25Fe1.25Cl4, i just choose one structure for optimization ,actually it is necessary to test for all structure, but it costs huge amount of time
+1.This is the cp2k code for reproducing aimd simulation from thesis "A cost-effective all-in-one halide material for all-solid-state batteries" \n
+2.there are 21 structures for Li1.25Fe1.25Cl4, i just choose one structure for optimization ,actually it is necessary to test for all structure, but it costs huge amount of time \n
 3.AIMD simulation should run about 100ps according to the paper, but it will cost about 20 days (intel 285K 24 cores), i just run about 10 ps for exercise
 4.After obtaining AIMD trajectory (xyz file),it is necessary to use vmd demand for processing the trajectory, the code includes : pbc set {15.378 10.741 14.778 90 90 90} -all;pbc box ;pbc wrap -all
 5.it also needs to transfer xyz trajectory to gro file to obtain msd and difffusion coefficient, the detail step can be obtain from the website: http://bbs.keinsci.com/forum.php?mod=viewthread&tid=46239&highlight=cp2k%2B%B9%EC%BC%A3%CE%C4%BC%FE.
